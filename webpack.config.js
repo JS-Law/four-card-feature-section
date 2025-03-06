@@ -2,7 +2,6 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  watch: true,
   mode: "development",
   entry: "./src/index.js",
   output: {
@@ -17,7 +16,7 @@ module.exports = {
     compress: true,
     liveReload: true,
     watchFiles: ["src/**/*"],
-    historyApiFallback:true,
+    historyApiFallback: true,
   },
   module: {
     rules: [
@@ -27,7 +26,7 @@ module.exports = {
       },
       {
         test: /\.scss$/i,
-        use: ["style-loader", "css-loader", "sass-loader"]
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
@@ -38,6 +37,9 @@ module.exports = {
         type: "asset/resource",
       },
     ],
+  },
+  watchOptions: {
+    poll: 1000,
   },
   plugins: [
     new HtmlWebpackPlugin({

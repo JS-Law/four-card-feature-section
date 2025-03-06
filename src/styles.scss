@@ -1,12 +1,21 @@
-*{
+/* VARIABLES */
+
+/* PRIMARY COLORS */
+
+$Red: hsl(0, 78%, 62%);
+$Cyan: hsl(180, 62%, 55%);
+$Orange: hsl(34, 97%, 64%);
+$Blue: hsl(212, 86%, 64%);
+
+* {
   box-sizing: border-box;
-} 
+}
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  section#hero{
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  section#hero {
     font-weight: 800;
     font-size: 10px;
   }
 }
-
-

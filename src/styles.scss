@@ -12,6 +12,7 @@ $Blue: hsl(212, 86%, 64%);
 $Grey: hsl(234, 12%, 34%);
 $LightGrey: hsl(212, 6%, 44%);
 $White: hsl(0, 0%, 100%);
+$background: #fafafa;
 
 /* FONT VARIABLES */
 $primary-font: "Poppins";
@@ -27,7 +28,7 @@ $semi-bold: 400;
 body {
   margin: 1.5rem;
   font-family: Poppins;
-
+  background-color: $background;
   /* TITLE SECTION */
   section#hero {
     padding-inline: 0.55rem;
@@ -55,6 +56,7 @@ body {
     border: solid $Grey 2px;
     padding: 1.5rem;
     margin: 1.5rem;
+    background-color: $White;
   }
   .cardTitle {
   }

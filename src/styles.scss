@@ -61,11 +61,23 @@ body {
   }
 
   .card {
-    border: solid $Grey 2px;
+    position: relative;
     padding: 1.5rem;
     margin: 1.5rem;
     background-color: $White;
-    border-radius: .5rem;
+    border-radius: .9rem;
+  }
+
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: red;
+    border-top-left-radius: .9rem;
+    border-top-right-radius: .9rem;
   }
 
   .cardTitle {}
@@ -74,3 +86,6 @@ body {
 
   .svgContainer {}
 }
+
+// TODO REMOVE BORDER FROM TOP LEFT AND RIGHT OF CARD ELEMENT
+// TODO ADJUST PSEUDO ELEMENT BORDER RADIUS'S

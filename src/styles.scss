@@ -25,25 +25,32 @@ $semi-bold: 400;
   margin: 0px;
   padding: 0px;
 }
+
 body {
-  margin: 1.5rem;
+  margin: .5rem;
+  padding-block-start: 1.5rem;
   font-family: Poppins;
   background-color: $background;
+
   /* TITLE SECTION */
   section#hero {
     padding-inline: 0.55rem;
     padding-block-start: 0.25rem;
     color: $Grey;
+    padding-block-end: 3.5rem;
+
     h1#mainTitle {
       font-weight: $light;
       margin-block: none;
       text-align: center;
     }
+
     h2#secondTitle {
       margin-block-start: -0.75rem;
       padding-block-end: 1rem;
       text-align: center;
     }
+
     p.description {
       padding-block-start: 0px;
       padding-inline: 0.5rem;
@@ -52,16 +59,18 @@ body {
       text-align: center;
     }
   }
+
   .card {
     border: solid $Grey 2px;
     padding: 1.5rem;
     margin: 1.5rem;
     background-color: $White;
+    border-radius: .5rem;
   }
-  .cardTitle {
-  }
-  .cardDescription {
-  }
-  .svgContainer {
-  }
+
+  .cardTitle {}
+
+  .cardDescription {}
+
+  .svgContainer {}
 }

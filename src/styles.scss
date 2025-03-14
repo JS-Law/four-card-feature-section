@@ -65,7 +65,8 @@ body {
     padding: 1.5rem;
     margin: 1.5rem;
     background-color: $White;
-    border-radius: .9rem;
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
   }
 
   .card::before {
@@ -76,8 +77,8 @@ body {
     width: 100%;
     height: 5px;
     background-color: red;
-    border-top-left-radius: .9rem;
-    border-top-right-radius: .9rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 9px;
   }
 
   .cardTitle {}

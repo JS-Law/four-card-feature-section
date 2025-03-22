@@ -27,7 +27,7 @@ $semi-bold: 400;
 }
 
 body {
-  margin: .5rem;
+  margin: 0.5rem;
   padding-block-start: 1.5rem;
   font-family: Poppins;
   background-color: $background;
@@ -66,10 +66,10 @@ body {
     margin: 1.45rem;
     background-color: $White;
     overflow: hidden;
-    border-bottom-right-radius: .5rem;
-    border-bottom-left-radius: .5rem;
-    border-top-left-radius: .5rem;
-    border-top-right-radius: .5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
   }
 
   .card::before {
@@ -101,21 +101,31 @@ body {
 
   .cardTitle {
     color: $Grey;
-    letter-spacing: .05rem;
-    padding-block-end: .25rem;
+    letter-spacing: 0.05rem;
+    padding-block-end: 0.25rem;
   }
-
 
   .cardDescription {
     color: $LightGrey;
-    font-size: .85rem;
+    font-size: 0.85rem;
     font-weight: $semi-bold;
     padding-block-end: 1.5rem;
   }
-
 
   .svgContainer {
     display: flex;
     justify-content: flex-end;
   }
+}
+
+/* Styles for viewports between 375px and 1440px */
+@media (min-width: 375px) and (max-width: 1439px) {
+  /* Add your styles here */
+  /* Need to add rules for #card-container and #child-card-container */
+}
+
+/* Styles for viewports above 1440px */
+@media (min-width: 1440px) {
+  /* Add your styles here */
+  /* Need to add rules for #card-container and #child-card-container */
 }

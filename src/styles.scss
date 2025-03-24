@@ -122,6 +122,17 @@ body {
 @media (min-width: 375px) and (max-width: 1439px) {
   /* Add your styles here */
   /* Need to add rules for #card-container and #child-card-container */
+  #card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    max-width: 40vw;
+  }
+  #child-card-container {
+    display: flex;
+  }
 }
 
 /* Styles for viewports above 1440px */

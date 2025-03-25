@@ -51,12 +51,18 @@ body {
       text-align: center;
     }
 
-    p.description {
-      padding-block-start: 0px;
-      padding-inline: 0.5rem;
-      line-height: 1.25rem;
-      font-size: 0.93rem;
-      text-align: center;
+    #description-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      p.description {
+        padding-block-start: 0px;
+        padding-inline: 0.5rem;
+        line-height: 1.25rem;
+        font-size: 0.93rem;
+        text-align: center;
+      }
     }
   }
 
@@ -119,7 +125,8 @@ body {
 }
 
 /* Styles for viewports between 375px and 1440px */
-@media (min-width: 375px) and (max-width: 1439px) {
+@media (min-width: 376px) and (max-width: 1439px) {
+
   /* Add your styles here */
   /* Need to add rules for #card-container and #child-card-container */
   #card-container {
@@ -127,9 +134,15 @@ body {
     flex-direction: column;
     align-items: center;
   }
+
+  p.description {
+    padding-inline: 0.1rem !important;
+  }
+
   .card {
     max-width: 40vw;
   }
+
   #child-card-container {
     display: flex;
   }

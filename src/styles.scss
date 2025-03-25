@@ -126,7 +126,6 @@ body {
 
 /* Styles for viewports between 375px and 1440px */
 @media (min-width: 376px) and (max-width: 1439px) {
-
   /* Add your styles here */
   /* Need to add rules for #card-container and #child-card-container */
   #card-container {
@@ -140,7 +139,8 @@ body {
   }
 
   .card {
-    max-width: 40vw;
+    // max-width: 40vw;
+    max-width: 300px;
   }
 
   #child-card-container {
@@ -149,14 +149,22 @@ body {
 }
 
 /* Styles for viewports above 1440px */
-@media (min-width: 1440px) {
+@media (min-width: 800px) and (max-width: 5440px) {
   /* Add your styles here */
   /* Need to add rules for #card-container and #child-card-container */
+  #card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    max-width: 20vw;
+  }
 }
 
 // TODO: Add rule to adjust size of font for text elements during transitions
-// TODO: Increase height of card elements:
 // TODO: Increase padding-inline of card elements
-// TODO: Increase width of hero element
-// TODO:
 //
+// TODO: Currently the card elements width in tablet breakpoints is 272px and the height is 196px
+// They need to be 314px x 250px
+// Like wise, the Desktop breakpoint is 350px and 250px

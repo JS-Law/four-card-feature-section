@@ -126,6 +126,7 @@ body {
 
 /* Styles for viewports between 375px and 1440px */
 @media (min-width: 376px) and (max-width: 1439px) {
+
   /* Add your styles here */
   /* Need to add rules for #card-container and #child-card-container */
   #card-container {
@@ -140,16 +141,26 @@ body {
 
   .card {
     // max-width: 40vw;
-    max-width: 300px;
+    max-width: 340px;
+    height: 250px;
   }
 
   #child-card-container {
     display: flex;
   }
+
+  #card2 {
+    flex-basis: auto;
+  }
+
+  #card3 {
+    flex-basis: 340px;
+  }
 }
 
 /* Styles for viewports above 1440px */
 @media (min-width: 800px) and (max-width: 5440px) {
+
   /* Add your styles here */
   /* Need to add rules for #card-container and #child-card-container */
   #card-container {
@@ -157,8 +168,13 @@ body {
     justify-content: center;
     align-items: center;
   }
+
   .card {
     max-width: 20vw;
+  }
+
+  p.description {
+    padding-inline: 0.1rem !important;
   }
 }
 
@@ -168,3 +184,4 @@ body {
 // TODO: Currently the card elements width in tablet breakpoints is 272px and the height is 196px
 // They need to be 314px x 250px
 // Like wise, the Desktop breakpoint is 350px and 250px
+// TODO: Find out why Card2 and Card3 are not growing at the same size horizontally, I potentially need to experiment with min width 

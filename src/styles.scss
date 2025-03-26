@@ -65,68 +65,72 @@ body {
       }
     }
   }
-
-  .card {
-    position: relative;
-    padding: 1.75rem;
-    margin: 1.45rem;
-    background-color: $White;
-    overflow: hidden;
-    border-bottom-right-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
-  }
-
-  .card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 9px;
-  }
-
-  #card1::before {
-    background-color: $Cyan;
-  }
-
-  #card2::before {
-    background-color: $Red;
-  }
-
-  #card3::before {
-    background-color: $Orange;
-  }
-
-  #card4::before {
-    background-color: $Blue;
-  }
-
-  .cardTitle {
-    color: $Grey;
-    letter-spacing: 0.05rem;
-    padding-block-end: 0.25rem;
-  }
-
-  .cardDescription {
-    color: $LightGrey;
-    font-size: 0.85rem;
-    font-weight: $semi-bold;
-    padding-block-end: 1.5rem;
-  }
-
-  .svgContainer {
+  #card-container {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    .card {
+      position: relative;
+      padding: 1.75rem;
+      margin: 1.45rem;
+      max-width: 314px;
+      background-color: $White;
+      overflow: hidden;
+      border-bottom-right-radius: 0.5rem;
+      border-bottom-left-radius: 0.5rem;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 9px;
+    }
+
+    #card1::before {
+      background-color: $Cyan;
+    }
+
+    #card2::before {
+      background-color: $Red;
+    }
+
+    #card3::before {
+      background-color: $Orange;
+    }
+
+    #card4::before {
+      background-color: $Blue;
+    }
+
+    .cardTitle {
+      color: $Grey;
+      letter-spacing: 0.05rem;
+      padding-block-end: 0.25rem;
+    }
+
+    .cardDescription {
+      color: $LightGrey;
+      font-size: 0.85rem;
+      font-weight: $semi-bold;
+      padding-block-end: 1.5rem;
+    }
+
+    .svgContainer {
+      display: flex;
+      justify-content: flex-end;
+    }
   }
 }
 
 /* Styles for viewports between 375px and 1440px */
-@media (min-width: 376px) and (max-width: 1439px) {
-
+@media (min-width: 700px) and (max-width: 799px) {
   /* Add your styles here */
   /* Need to add rules for #card-container and #child-card-container */
   #card-container {
@@ -140,8 +144,29 @@ body {
   }
 
   .card {
-    // max-width: 40vw;
-    max-width: 340px;
+    width: 314px;
+    height: 250px;
+  }
+
+  #child-card-container {
+    display: flex;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1439px) {
+  /* Add your styles here */
+  #card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  p.description {
+    padding-inline: 0.1rem !important;
+  }
+
+  .card {
+    width: 314px;
     height: 250px;
   }
 
@@ -149,24 +174,19 @@ body {
     display: flex;
   }
 
-  #card2 {
-    flex-basis: auto;
-  }
-
+  #card2,
   #card3 {
-    flex-basis: 340px;
+    flex: 1 1 340px;
   }
 }
-
 /* Styles for viewports above 1440px */
-@media (min-width: 800px) and (max-width: 5440px) {
-
+@media (min-width: 1440px) and (max-width: 5440px) {
   /* Add your styles here */
-  /* Need to add rules for #card-container and #child-card-container */
   #card-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row !important;
   }
 
   .card {
@@ -181,7 +201,7 @@ body {
 // TODO: Add rule to adjust size of font for text elements during transitions
 // TODO: Increase padding-inline of card elements
 //
-// TODO: Currently the card elements width in tablet breakpoints is 272px and the height is 196px
-// They need to be 314px x 250px
-// Like wise, the Desktop breakpoint is 350px and 250px
-// TODO: Find out why Card2 and Card3 are not growing at the same size horizontally, I potentially need to experiment with min width 
+// TODO: Need to ensure breakpoint card widths are correct
+// Tablet needs to be 314px x 250px
+// Desktop breakpoint is 350px and 250px
+// TODO: Align and style footer

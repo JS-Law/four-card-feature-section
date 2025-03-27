@@ -138,7 +138,15 @@ body {
     flex-direction: column;
     align-items: center;
   }
-
+  #mainTitle {
+    font-size: 2.25rem;
+  }
+  #secondTitle {
+    font-size: 2.25rem;
+  }
+  #description-container {
+    margin-inline: 5rem;
+  }
   p.description {
     padding-inline: 0.1rem !important;
   }
@@ -198,9 +206,8 @@ body {
   }
 }
 
-// TODO: Add rule to adjust size of font for text elements during transitions
 // TODO: Increase padding-inline of card elements
-//
+// TODO: Fix description issue, im running into problems with it being separated into 3 different elements. Maybe adding them as a pseudo element could work
 // TODO: Need to ensure breakpoint card widths are correct
 // Tablet needs to be 314px x 250px
 // Desktop breakpoint is 350px and 250px

@@ -50,6 +50,7 @@ body {
       padding-block-end: 1rem;
       text-align: center;
     }
+
     #desktop-description {
       display: none;
     }
@@ -68,10 +69,13 @@ body {
       }
     }
   }
+
   #card-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-block-end: 4rem;
+
     .card {
       position: relative;
       padding: 1.75rem;
@@ -130,10 +134,15 @@ body {
       justify-content: flex-end;
     }
   }
+
+  footer {
+    text-align: center;
+  }
 }
 
 /* Styles for viewports between 375px and 1440px */
 @media (min-width: 700px) and (max-width: 799px) {
+
   /* Add your styles here */
   /* Need to add rules for #card-container and #child-card-container */
   #card-container {
@@ -141,22 +150,26 @@ body {
     flex-direction: column;
     align-items: center;
   }
+
   #mainTitle {
     font-size: 2.25rem;
   }
+
   #secondTitle {
     font-size: 2.25rem;
   }
 
   #desktop-description {
     display: block !important;
-    margin-inline: 5rem;
+    margin-inline: 6.2rem;
+    text-align: center;
+    font-size: .93rem;
   }
 
   #description-container {
     display: none !important;
-    margin-inline: 5rem;
   }
+
   p.description {
     padding-inline: 0.1rem !important;
   }
@@ -172,7 +185,18 @@ body {
 }
 
 @media (min-width: 800px) and (max-width: 1439px) {
+
   /* Add your styles here */
+
+  #mainTitle {
+    font-size: 2.25rem;
+  }
+
+  #secondTitle {
+    font-size: 2.25rem;
+  }
+
+
   #card-container {
     display: flex;
     flex-direction: column;
@@ -197,9 +221,31 @@ body {
     flex: 1 1 340px;
   }
 }
+
 /* Styles for viewports above 1440px */
 @media (min-width: 1440px) and (max-width: 5440px) {
+
   /* Add your styles here */
+
+  #mainTitle {
+    font-size: 2.25rem;
+  }
+
+  #desktop-description {
+    display: block !important;
+    margin-inline: 27rem;
+    text-align: center;
+    font-size: .93rem;
+  }
+
+  #description-container {
+    display: none !important;
+  }
+
+  #secondTitle {
+    font-size: 2.25rem;
+  }
+
   #card-container {
     display: flex;
     justify-content: center;

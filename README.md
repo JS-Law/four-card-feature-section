@@ -33,7 +33,7 @@ Users should be able to:
 - Solution URL: [GitHub Repository](https://github.com/JS-Law/four-card-feature-section/)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-## My process
+## Myprocess
 
 I started this project with SASS and Webpack in mind. I setup my loaders and learned that there was a SASS loader as well. I started first designing the mobile design and gradually worked my way to the desktop breakpoint. I definitely have a few rules that overlap but I want to keep working the muscles so I'm moving on to the next project.
 
